@@ -13,13 +13,22 @@ body {
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+
     letter-spacing: 0.03em;
 
 }
 
-h1,h2,h3,h4,h5,h6 {
-    color: var(--text-h-color);
+.list {
+    list-style: none;
 }
+
+ .section-title {
+    color: var(--text-h-color);
+ }
+
+/* h1,h2,h3,h4,h5,h6 {
+    color: var(--text-h-color);
+} */
 
 /* шапка */
 
@@ -45,7 +54,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* навігація */
 
-.site-nav {
+.site-nav .link{
     font-weight: medium;
     font-size: 14px;
     line-height: 1.14;
@@ -54,14 +63,20 @@ h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
 }
 
-.site-nav:hover,
-.site-nav:focus{
+ /* Посилання */
+
+.link{
+    text-decoration: none;
+}
+
+.link:hover,
+.link:focus{
     color: var(--btn-blue-color);
 }
 
 /* контакти */
 
-.contact-header a{
+.contacts-header{
     font-weight: medium;
     font-size: 14px;
     line-height: 1.14;
@@ -69,10 +84,6 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--text-color);
 }
 
-.contact-header:hover a,
-.contact-header:focus a{
-    color: var(--btn-blue-color);
-}
 
 /* Герой чи баннер */
 
@@ -100,4 +111,58 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    border: 0;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    cursor: pointer;
+}
+
+/* Особливості компанії */
+
+.features-title {
+    color: var(--text-h-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.features p{
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* Команда*/
+
+.name-title{
+    color: var(--text-h-color);
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team p {
+    font-size: 16px;
+    line-height: 1,19;
+}
+
+
+/* Підвал */
+
+.footer {
+    background-color: var(--bcg-black-color);
+    color: var(--bcg-white-color);
+}
+
+.footer .logo {
+    color: var(--bcg-white-color);
+}
+
+.contacts-footer {
+    font-size: 14px;
+    line-height: 1,71;
+    color: rgba(255, 255, 255, 0.6);
 }
