@@ -22,13 +22,17 @@ body {
     list-style: none;
 }
 
- .section-title {
+.section-title {
     color: var(--text-h-color);
+    text-align: center;
  }
 
 /* h1,h2,h3,h4,h5,h6 {
     color: var(--text-h-color);
 } */
+
+
+ /* СТУДІЯ */
 
 /* шапка */
 
@@ -136,6 +140,10 @@ body {
 
 /* Команда*/
 
+.team {
+    background-color: var(--bcg-grey-color);
+}
+
 .name-title{
     color: var(--text-h-color);
     font-weight: medium;
@@ -166,3 +174,40 @@ body {
     line-height: 1,71;
     color: rgba(255, 255, 255, 0.6);
 }
+
+
+
+ /* ПОРТФОЛІО */
+
+ /* Фільт */
+
+.portfolio-btn {
+   background-color: var(--bcg-grey-color);
+   color: var(--text-h-color);
+   font-weight: medium;
+   font-size: 16px;
+   line-height: 1,62;
+   text-align: center;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background-color: var(--btn-blue-color);
+    color: var(--bcg-white-color);
+}
+
+
+ /* Список робіт */
+
+ .portfolio {
+    font-size: 16px;
+    line-height: 1,88;
+ }
+
+ .portfolio-title {
+    color: var(--text-h-color);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+ }
